@@ -348,7 +348,7 @@ input:-webkit-autofill:active{
 .sidebar-link ul li a i{
   margin-right: 10px;
   font-size: 14px;
-  width: 14px;
+  width: 10px;
 }
 .page-line{
   display: flex;
