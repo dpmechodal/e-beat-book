@@ -1,19 +1,29 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from './components/Dashboard';
-import UserDetails from './components/UserDetails';
-import DriverDetails from './components/DriverDetails';
-import Promotions from './components/Promotions';
-import VehicleTypes from './components/VehicleTypes';
-import DriverDocuments from './components/DriverDocuments';
-import Bookings from './components/Bookings';
-import HelpSupport from './components/HelpSupport';
 import Scrolltotop from './Scrolltotop';
-import Signin from './components/Signin';
-import EmailVerification from './components/EmailVerification';
-import ForgotPassword from './components/ForgotPassword';
-import Successfullysentmail from './components/Successfullysentmail';
-import ChangePassword from './components/ChangePassword';
+import Signin from './AllAdmin/Signin';
+import OTP from './AllAdmin/OTP';
+
+// Super Admin 
+import SuperAdminZone from './AllAdmin/SuperAdmin/Zone';
+import SuperAdminRange from './AllAdmin/SuperAdmin/Range';
+import SuperAdminDistrict from './AllAdmin/SuperAdmin/District';
+import SuperAdminCircleOfficer from './AllAdmin/SuperAdmin/CircleOfficer';
+import SuperAdminPoliceStation from './AllAdmin/SuperAdmin/PoliceStation';
+import SuperAdminEvent from './AllAdmin/SuperAdmin/Event';
+import SuperAdminRank from './AllAdmin/SuperAdmin/Rank';
+import SuperAdminRemarks from './AllAdmin/SuperAdmin/Remarks';
+
+import ZoneAdminDashboard from './AllAdmin/ZoneAdmin/Dashboard';
+import ZoneAdminVehicleTypes from './AllAdmin/ZoneAdmin/VehicleTypes';
+import RangeAdminDashboard from './AllAdmin/RangeAdmin/Dashboard';
+import RangeAdminVehicleTypes from './AllAdmin/RangeAdmin/VehicleTypes';
+import CRAdminDashboard from './AllAdmin/CRAdmin/Dashboard';
+import CRAdminVehicleTypes from './AllAdmin/CRAdmin/VehicleTypes';
+import DistrictAdminDashboard from './AllAdmin/DistrictAdmin/Dashboard';
+import DistrictAdminVehicleTypes from './AllAdmin/DistrictAdmin/VehicleTypes';
+import PoliceStationAdminDashboard from './AllAdmin/PoliceStationAdmin/Dashboard';
+import PoliceStationAdminVehicleTypes from './AllAdmin/PoliceStationAdmin/VehicleTypes';
 
 
 function App() {
@@ -23,18 +33,28 @@ function App() {
       <Scrolltotop/>
         <Routes>
           <Route path='/' element={<Signin/>}/>
-          <Route path='/ForgotPassword' element={<ForgotPassword/>}/>
-          <Route path='/EmailVerification' element={<EmailVerification/>}/>
-          <Route path='/Dashboard' element={<Dashboard/>}/>
-          <Route path='/UserDetails' element={<UserDetails/>}/>
-          <Route path='/DriverDetails' element={<DriverDetails/>}/>
-          <Route path='/Promotions' element={<Promotions/>}/>
-          <Route path='/VehicleTypes' element={<VehicleTypes/>}/>
-          <Route path='/DriverDocuments' element={<DriverDocuments/>}/>
-          <Route path='/Bookings' element={<Bookings/>}/>
-          <Route path='/HelpSupport' element={<HelpSupport/>}/>
-          <Route path='/Successfullysentmail' element={<Successfullysentmail/>}/>
-          <Route path='/ChangePassword' element={<ChangePassword/>}/>
+          <Route path='/OTP' element={<OTP/>}/>
+
+          {/* Super Admin  */}
+          <Route path='/SuperAdmin/Zone' element={<SuperAdminZone/>}/>
+          <Route path='/SuperAdmin/Range' element={<SuperAdminRange/>}/>
+          <Route path='/SuperAdmin/District' element={<SuperAdminDistrict/>}/>
+          <Route path='/SuperAdmin/CircleOfficer' element={<SuperAdminCircleOfficer/>}/>
+          <Route path='/SuperAdmin/PoliceStation' element={<SuperAdminPoliceStation/>}/>
+          <Route path='/SuperAdmin/Event' element={<SuperAdminEvent/>}/>
+          <Route path='/SuperAdmin/Rank' element={<SuperAdminRank/>}/>
+          <Route path='/SuperAdmin/Remarks' element={<SuperAdminRemarks/>}/>
+
+          <Route path='/ZoneAdmin/Dashboard' element={<ZoneAdminDashboard/>}/>
+          <Route path='/ZoneAdmin/VehicleTypes' element={<ZoneAdminVehicleTypes/>}/>
+          <Route path='/RangeAdmin/Dashboard' element={<RangeAdminDashboard/>}/>
+          <Route path='/RangeAdmin/VehicleTypes' element={<RangeAdminVehicleTypes/>}/>
+          <Route path='/CRAdmin/Dashboard' element={<CRAdminDashboard/>}/>
+          <Route path='/CRAdmin/VehicleTypes' element={<CRAdminVehicleTypes/>}/>
+          <Route path='/DistrictAdmin/Dashboard' element={<DistrictAdminDashboard/>}/>
+          <Route path='/DistrictAdmin/VehicleTypes' element={<DistrictAdminVehicleTypes/>}/>
+          <Route path='/PoliceStationAdmin/Dashboard' element={<PoliceStationAdminDashboard/>}/>
+          <Route path='/PoliceStationAdmin/VehicleTypes' element={<PoliceStationAdminVehicleTypes/>}/>
         </Routes>
       </Router>
     </div>

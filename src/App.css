@@ -32,7 +32,7 @@ a{
   background-color: #212529;
   border-radius: 8px 8px 0 0;
   box-shadow: 0px 2px 6px 4px rgba(50, 71, 92, 0.02), 0px 4px 9px 1px rgba(50, 71, 92, 0.04), 0px 2px 9px -2px rgba(50, 71, 92, 0.06);
-  padding: 40px;
+  padding: 20px;
 }
 li.nav-item {
   margin: 0 8px;
@@ -72,7 +72,7 @@ li.nav-item {
   border-radius: 0 0 8px 8px;
   background: #FFF;
   box-shadow: 0px 2px 6px 4px rgba(50, 71, 92, 0.02), 0px 4px 9px 1px rgba(50, 71, 92, 0.04), 0px 2px 9px -2px rgba(50, 71, 92, 0.06);
-  padding: 40px;
+  padding: 25px;
 }
 .signin-page img{
   display: flex;
@@ -348,7 +348,7 @@ input:-webkit-autofill:active{
 .sidebar-link ul li a i{
   margin-right: 10px;
   font-size: 14px;
-  width: 10px;
+  width: 14px;
 }
 .page-line{
   display: flex;
@@ -1294,7 +1294,47 @@ tbody.body-half-screen{
 }
 
 
+/* OTP  */
 
+.bg-india{
+  background-image: url(../src/Image/indiabg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input.otp-input{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #32475C99;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  height: 58px;
+  width: 58px;
+  padding: 14px;
+  text-align: center;
+}
+.otp-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.login-top img{
+  width: 80px;
+}
+p.error-msg{
+  margin-bottom: 20px;
+  color: red;
+}
+.sidebar-logo img{
+  width: 80px;
+}
 
 
 

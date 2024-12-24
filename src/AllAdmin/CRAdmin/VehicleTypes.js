@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
-import user from '../Image/user.png';
+import user from '../../Image/user.png';
 
 const VehicleTypes = () => {
   return (
@@ -21,7 +21,14 @@ const VehicleTypes = () => {
                                 </div>
                             </div>
                             <div className='d-flex align-items-end justify-content-between'>
-                                <div></div>
+                                <div className="mb-3 col-lg-2 col-md-3 col-5">
+                                    <label className='mb-2'>Filter</label>
+                                    <select className="form-select form-control" id="" aria-label="Floating label select example">
+                                        <option selected>All </option>
+                                        <option value="1">Verified </option>
+                                        <option value="2">Pending</option>
+                                    </select>
+                                </div>
                                 <div className="mb-3 pro-add-new px-0">
                                     <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Add Vehicle</Link>
                                 </div>
