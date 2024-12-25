@@ -27,11 +27,13 @@ import ZoneAdminJanJagrukta from './AllAdmin/ZoneAdmin/JanJagrukta';
 import RangeAdminDashboard from './AllAdmin/RangeAdmin/Dashboard';
 import RangeAdminReport from './AllAdmin/RangeAdmin/Report';
 
+// CO Admin
+import COAdminDashboard from './AllAdmin/COAdmin/Dashboard';
+import COAdminReport from './AllAdmin/COAdmin/Report';
 
-import CRAdminDashboard from './AllAdmin/CRAdmin/Dashboard';
-import CRAdminVehicleTypes from './AllAdmin/CRAdmin/VehicleTypes';
+// District Admin
 import DistrictAdminDashboard from './AllAdmin/DistrictAdmin/Dashboard';
-import DistrictAdminVehicleTypes from './AllAdmin/DistrictAdmin/VehicleTypes';
+import DistrictAdminReport from './AllAdmin/DistrictAdmin/Report';
 
 // Police Station Admin
 import PoliceStationAdminDashboard from './AllAdmin/PoliceStationAdmin/Dashboard';
@@ -77,11 +79,13 @@ function App() {
           <Route path='/RangeAdmin/Dashboard' element={<RangeAdminDashboard/>}/>
           <Route path='/RangeAdmin/Report' element={<RangeAdminReport/>}/>
           
+          {/* CO Admin */}
+          <Route path='/COAdmin/Dashboard' element={<COAdminDashboard/>}/>
+          <Route path='/COAdmin/Report' element={<COAdminReport/>}/>
 
-          <Route path='/CRAdmin/Dashboard' element={<CRAdminDashboard/>}/>
-          <Route path='/CRAdmin/VehicleTypes' element={<CRAdminVehicleTypes/>}/>
+          {/* District Admin */}
           <Route path='/DistrictAdmin/Dashboard' element={<DistrictAdminDashboard/>}/>
-          <Route path='/DistrictAdmin/VehicleTypes' element={<DistrictAdminVehicleTypes/>}/>
+          <Route path='/DistrictAdmin/Report' element={<DistrictAdminReport/>}/>
 
           {/* Police Station Admin */}
           <Route path='/PoliceStationAdmin/Dashboard' element={<PoliceStationAdminDashboard/>}/>

@@ -12,13 +12,13 @@ const Sidebar = () => {
             {/* nav fixx */}
             <div className='sidebar'>
                 <div className="sidebar-logo">
-                    <Link to={"/CRAdmin/Dashboard"}><img src={logo} className='img-fluid'/></Link>
+                    <Link to={"/COAdmin/Dashboard"}><img src={logo} className='img-fluid'/></Link>
                 </div>
                 <div className="overflow-y">
                     <div className="sidebar-link">
                         <ul>
-                            <li className={location.pathname === '/CRAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/CRAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
-                            <li className={location.pathname === '/CRAdmin/VehicleTypes' ? 'active' : ''}><NavLink to={"/CRAdmin/VehicleTypes"}><i className="fa-solid fa-user"></i>Assign Report</NavLink></li>
+                            <li className={location.pathname === '/COAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/COAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
+                            <li className={location.pathname === '/COAdmin/Report' ? 'active' : ''}><NavLink to={"/COAdmin/Report"}><i className="fa-solid fa-user"></i>Report</NavLink></li>
                         </ul>
                     </div>
                 </div>

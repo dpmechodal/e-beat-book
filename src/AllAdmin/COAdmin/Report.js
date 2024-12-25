@@ -14,19 +14,9 @@ const Report = () => {
                     <div className="col-12 mb-24">
                         <div className="all-select mb-3">
                             <select className="form-select form-control" aria-label="Floating label select example">
-                                <option selected>Select Range </option>
-                                <option value="1">Select Range </option>
-                                <option value="2">Select Range </option>
-                            </select>
-                            <select className="form-select form-control" aria-label="Floating label select example">
                                 <option selected>Select District </option>
                                 <option value="1">Select District </option>
                                 <option value="1">Select District </option>
-                            </select>
-                            <select className="form-select form-control" aria-label="Floating label select example">
-                                <option selected>Select Circle Officer </option>
-                                <option value="1">Select Circle Officer </option>
-                                <option value="2">Select Circle Officer </option>
                             </select>
                             <select className="form-select form-control" aria-label="Floating label select example">
                                 <option selected>Select Police Station</option>

@@ -49,7 +49,7 @@ const OtpInput = () => {
       navigate("/RangeAdmin/Dashboard"); // Redirect to Dashboard page
     }
     else if (otp.join("") === "4444") {
-      navigate("/CRAdmin/Dashboard"); // Redirect to Dashboard page
+      navigate("/COAdmin/Dashboard"); // Redirect to Dashboard page
     }
     else if (otp.join("") === "5555") {
       navigate("/DistrictAdmin/Dashboard"); // Redirect to Dashboard page
