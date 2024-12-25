@@ -18,12 +18,18 @@ const Sidebar = () => {
                     <div className="sidebar-link">
                         <ul>
                             <li className={location.pathname === '/PoliceStationAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
+                            <div class="page-line"><hr/><span>User Panel</span></div>
                             <li className={location.pathname === '/PoliceStationAdmin/Beats' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Beats"}><i className="fa-solid fa-user"></i>Beats</NavLink></li>
-                            <li className={location.pathname === '/PoliceStationAdmin/Police' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Police"}><i className="fa-solid fa-user"></i>Police</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/Village' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Village"}><i className="fa-solid fa-user"></i>Village</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/Place' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Place"}><i className="fa-solid fa-user"></i>Place</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/User' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/User"}><i className="fa-solid fa-user"></i>User</NavLink></li>
+                            <div class="page-line"><hr/><span>Admin Panel</span></div>
+                            <li className={location.pathname === '/PoliceStationAdmin/PrarupA' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PrarupA"}><i className="fa-solid fa-user"></i>प्रारुप-A</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/PrarupB' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PrarupB"}><i className="fa-solid fa-user"></i>प्रारुप-B</NavLink></li>
                             <li className={location.pathname === '/PoliceStationAdmin/NistaranVivran' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/NistaranVivran"}><i className="fa-solid fa-user"></i>निस्तारण का विवरण</NavLink></li>
-                            <li className={location.pathname === '/PoliceStationAdmin/PiditaoInfo' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PiditaoInfo"}><i className="fa-solid fa-user"></i>पीड़िताओं का Info</NavLink></li>
-                            <li className={location.pathname === '/PoliceStationAdmin/PracharPrasar' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PracharPrasar"}><i className="fa-solid fa-user"></i>प्रचार-प्रसार हेतु भ्रमण की संख्या</NavLink></li>
-                            <li className={location.pathname === '/PoliceStationAdmin/JanJagrukta' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/JanJagrukta"}><i className="fa-solid fa-user"></i>जन-जागरुकता कार्यक्रमों की संख्या व स्थान</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/PrarupC' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PrarupC"}><i className="fa-solid fa-user"></i>प्रारुप-C</NavLink></li>
+                            {/* <li className={location.pathname === '/PoliceStationAdmin/PracharPrasar' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PracharPrasar"}><i className="fa-solid fa-user"></i>प्रचार-प्रसार हेतु भ्रमण की संख्या</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/JanJagrukta' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/JanJagrukta"}><i className="fa-solid fa-user"></i>जन-जागरुकता कार्यक्रमों की संख्या व स्थान</NavLink></li> */}
                             <li className={location.pathname === '/PoliceStationAdmin/Report' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Report"}><i className="fa-solid fa-user"></i>Report</NavLink></li>
                         </ul>
                     </div>

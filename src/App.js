@@ -39,9 +39,13 @@ import DistrictAdminReport from './AllAdmin/DistrictAdmin/Report';
 import PoliceStationAdminDashboard from './AllAdmin/PoliceStationAdmin/Dashboard';
 import PoliceStationAdminCreateBeats from './AllAdmin/PoliceStationAdmin/CreateBeats';
 import PoliceStationAdminBeats from './AllAdmin/PoliceStationAdmin/Beats';
-import PoliceStationAdminPolice from './AllAdmin/PoliceStationAdmin/Police';
+import PoliceStationAdminVillage from './AllAdmin/PoliceStationAdmin/Village';
+import PoliceStationAdminPlace from './AllAdmin/PoliceStationAdmin/Place';
+import PoliceStationAdminUser from './AllAdmin/PoliceStationAdmin/User';
+import PoliceStationAdminPrarupA from './AllAdmin/PoliceStationAdmin/PrarupA';
+import PoliceStationAdminPrarupB from './AllAdmin/PoliceStationAdmin/PrarupB';
+import PoliceStationAdminPrarupC from './AllAdmin/PoliceStationAdmin/PrarupC';
 import PoliceStationAdminNistaranVivran from './AllAdmin/PoliceStationAdmin/NistaranVivran';
-import PoliceStationAdminPiditaoInfo from './AllAdmin/PoliceStationAdmin/PiditaoInfo';
 import PoliceStationAdminPracharPrasar from './AllAdmin/PoliceStationAdmin/PracharPrasar';
 import PoliceStationAdminJanJagrukta from './AllAdmin/PoliceStationAdmin/JanJagrukta';
 import PoliceStationAdminReport from './AllAdmin/PoliceStationAdmin/Report';
@@ -91,9 +95,13 @@ function App() {
           <Route path='/PoliceStationAdmin/Dashboard' element={<PoliceStationAdminDashboard/>}/>
           <Route path='/PoliceStationAdmin/CreateBeats' element={<PoliceStationAdminCreateBeats/>}/>
           <Route path='/PoliceStationAdmin/Beats' element={<PoliceStationAdminBeats/>}/>
-          <Route path='/PoliceStationAdmin/Police' element={<PoliceStationAdminPolice/>}/>
+          <Route path='/PoliceStationAdmin/Village' element={<PoliceStationAdminVillage/>}/>
+          <Route path='/PoliceStationAdmin/Place' element={<PoliceStationAdminPlace/>}/>
+          <Route path='/PoliceStationAdmin/User' element={<PoliceStationAdminUser/>}/>
+          <Route path='/PoliceStationAdmin/PrarupA' element={<PoliceStationAdminPrarupA/>}/>
+          <Route path='/PoliceStationAdmin/PrarupB' element={<PoliceStationAdminPrarupB/>}/>
+          <Route path='/PoliceStationAdmin/PrarupC' element={<PoliceStationAdminPrarupC/>}/>
           <Route path='/PoliceStationAdmin/NistaranVivran' element={<PoliceStationAdminNistaranVivran/>}/>
-          <Route path='/PoliceStationAdmin/PiditaoInfo' element={<PoliceStationAdminPiditaoInfo/>}/>
           <Route path='/PoliceStationAdmin/PracharPrasar' element={<PoliceStationAdminPracharPrasar/>}/>
           <Route path='/PoliceStationAdmin/JanJagrukta' element={<PoliceStationAdminJanJagrukta/>}/>
           <Route path='/PoliceStationAdmin/Report' element={<PoliceStationAdminReport/>}/>

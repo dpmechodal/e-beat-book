@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 import user from '../../Image/user.png';
 
-const Beats = () => {
+const User = () => {
   return (
     <div>
         {<Sidebar/>}
@@ -14,7 +14,7 @@ const Beats = () => {
                     <div className="col-12 mb-24">
                         <div className="bg-box">
                             <div className="pro-add-new px-0">
-                                <p>Beats</p>
+                                <p>User </p>
                                 <div className="form-floating small-floating">
                                     <input type="text" className="form-control py-2 w-auto" id="floatingInput" placeholder="name@example.com"/>
                                     <label for="floatingInput">Search</label>
@@ -24,7 +24,7 @@ const Beats = () => {
                                 <div className="col-lg-2 col-md-3 col-5">
                                 </div>
                                 <div className="pro-add-new px-0 mb-0">
-                                    <Link className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Create Beats</Link>
+                                    <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Add User</Link>
                                 </div>
                             </div>
                             <div className='responsive-table'>
@@ -32,14 +32,20 @@ const Beats = () => {
                                     <thead>
                                         <tr>
                                             <th>No</th>                                    
-                                            <th>Beats Name</th>
+                                            <th>Name</th>
+                                            <th>PO Number</th>
+                                            <th>Mobile No</th>
+                                            <th>Select Beat</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Beats Name</td>
+                                            <td>1</td>                                  
+                                            <td>Name</td>
+                                            <td>PO Number</td>
+                                            <td>Mobile No</td>
+                                            <td>Select Beat</td>
                                             <td>
                                                 <div className='icon-up-del'>
                                                     <Link type="button" data-bs-toggle="modal" data-bs-target="#exampleModaledit"><i className="fa-solid fa-pen"></i></Link>
@@ -72,15 +78,30 @@ const Beats = () => {
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Add Beats</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">Add User</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
                                 <div className="mb-3 col-12">
-                                    <label className='mb-2'>Beats Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Beats Name'/>
+                                    <label className='mb-2'>Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Name'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>PO Number</label>
+                                    <input type="text" className="form-control" placeholder='Enter PO Number'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Mobile No</label>
+                                    <input type="tel" className="form-control" placeholder='Enter Mobile No'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Select Beat</label>
+                                    <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
+                                        <option selected>Select Beat</option>
+                                        <option value="1">Select Beat</option>
+                                    </select>
                                 </div>
                                 <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                     <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
@@ -99,15 +120,30 @@ const Beats = () => {
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Edit Beats</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">Edit User</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
                                 <div className="mb-3 col-12">
-                                    <label className='mb-2'>Beats Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Beats Name'/>
+                                    <label className='mb-2'>Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Name'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>PO Number</label>
+                                    <input type="text" className="form-control" placeholder='Enter PO Number'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Mobile No</label>
+                                    <input type="tel" className="form-control" placeholder='Enter Mobile No'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Select Beat</label>
+                                    <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
+                                        <option selected>Select Beat</option>
+                                        <option value="1">Select Beat</option>
+                                    </select>
                                 </div>
                                 <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                     <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
@@ -128,4 +164,4 @@ const Beats = () => {
   )
 }
 
-export default Beats
+export default User
