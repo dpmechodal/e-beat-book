@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 import user from '../../Image/user.png';
 
-const Zone = () => {
+const NistaranVivran = () => {
   return (
     <div>
         {<Sidebar/>}
@@ -14,7 +14,7 @@ const Zone = () => {
                     <div className="col-12 mb-24">
                         <div className="bg-box">
                             <div className="pro-add-new px-0">
-                                <p>Zone Master </p>
+                                <p>निस्तारण का विवरण</p>
                                 <div className="form-floating small-floating">
                                     <input type="text" className="form-control py-2 w-auto" id="floatingInput" placeholder="name@example.com"/>
                                     <label for="floatingInput">Search</label>
@@ -22,15 +22,9 @@ const Zone = () => {
                             </div>
                             <div className='d-flex align-items-end justify-content-between mb-3'>
                                 <div className="col-lg-2 col-md-3 col-5">
-                                    {/* <label className='mb-2'>Select Zone</label> */}
-                                    <select className="form-select form-control" id="" aria-label="Floating label select example">
-                                        <option selected>Select Zone </option>
-                                        <option value="1">Select Zone </option>
-                                        <option value="2">Select Zone </option>
-                                    </select>
                                 </div>
                                 <div className="pro-add-new px-0 mb-0">
-                                    <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Create Zone</Link>
+                                    <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> डेटा जोड़ें</Link>
                                 </div>
                             </div>
                             <div className='responsive-table'>
@@ -38,14 +32,14 @@ const Zone = () => {
                                     <thead>
                                         <tr>
                                             <th>No</th>                                    
-                                            <th>Zone Name</th>
+                                            <th>निस्तारण का विवरण</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Zone Name</td>
+                                            <td>1</td>                                  
+                                            <td>निस्तारण का विवरण</td>
                                             <td>
                                                 <div className='icon-up-del'>
                                                     <Link type="button" data-bs-toggle="modal" data-bs-target="#exampleModaledit"><i className="fa-solid fa-pen"></i></Link>
@@ -78,15 +72,15 @@ const Zone = () => {
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Create Zone</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">डेटा जोड़ें</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
                                 <div className="mb-3 col-12">
-                                    <label className='mb-2'>Zone Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Zone Name'/>
+                                    <label className='mb-2'>निस्तारण का विवरण</label>
+                                    <input type="text" className="form-control" placeholder='निस्तारण का विवरण'/>
                                 </div>
                                 <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                     <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
@@ -105,15 +99,15 @@ const Zone = () => {
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Edit Zone</h5>
+                        <h5 className="modal-title" id="exampleModalLabel"> संपादित करें</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
                                 <div className="mb-3 col-12">
-                                    <label className='mb-2'>Zone Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Zone Name'/>
+                                    <label className='mb-2'>निस्तारण का विवरण</label>
+                                    <input type="text" className="form-control" placeholder='निस्तारण का विवरण'/>
                                 </div>
                                 <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                     <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
@@ -134,4 +128,4 @@ const Zone = () => {
   )
 }
 
-export default Zone
+export default NistaranVivran

@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 import user from '../../Image/user.png';
 
-const PoliceStation = () => {
+const Users = () => {
   return (
     <div>
         {<Sidebar/>}
@@ -14,7 +14,7 @@ const PoliceStation = () => {
                     <div className="col-12 mb-24">
                         <div className="bg-box">
                             <div className="pro-add-new px-0">
-                                <p>Police Station </p>
+                                <p>Users </p>
                                 <div className="form-floating small-floating">
                                     <input type="text" className="form-control py-2 w-auto" id="floatingInput" placeholder="name@example.com"/>
                                     <label for="floatingInput">Search</label>
@@ -54,7 +54,7 @@ const PoliceStation = () => {
                                     </select>
                                 </div>
                                 <div className="pro-add-new px-0 mb-0">
-                                    <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Create Police Station</Link>
+                                    <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Create Users</Link>
                                 </div>
                             </div>
                             <div className='responsive-table'>
@@ -62,9 +62,12 @@ const PoliceStation = () => {
                                     <thead>
                                         <tr>
                                             <th>No</th>                                    
+                                            <th>Users Name</th>
+                                            <th>Mobile</th>
+                                            <th>Office</th>
                                             <th>Police Station Name</th>
-                                            <th>Zone Name</th>
                                             <th>Range Name</th>
+                                            <th>Zone Name</th>
                                             <th>District Name</th>
                                             <th>Circle Officer Name</th>
                                             <th>Action</th>
@@ -72,10 +75,13 @@ const PoliceStation = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>CircleOfficer Name</td>
-                                            <td>Zone Name</td>
+                                            <td>1</td>                             
+                                            <td>Users Name</td>
+                                            <td>Mobile</td>
+                                            <td>Office</td>
+                                            <td>Police Station Name</td>
                                             <td>Range Name</td>
+                                            <td>Zone Name</td>
                                             <td>District Name</td>
                                             <td>Circle Officer Name</td>
                                             <td>
@@ -110,38 +116,53 @@ const PoliceStation = () => {
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Create Police Station</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">Create Users</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
-                                <div className="mb-3 col-12">
-                                    <label className='mb-2'>Police Station Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Police Station Name'/>
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Users Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Users Name'/>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Mobile No</label>
+                                    <input type="tel" className="form-control" placeholder='Enter Mobile No'/>
+                                </div>
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Office Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Office Name'/>
+                                </div>
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Select Police Station</label>
+                                    <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
+                                        <option selected>Select Police Station</option>
+                                        <option value="1">Select Police Station</option>
+                                    </select>
+                                </div>
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select Zone</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select Zone</option>
                                         <option value="1">Select Zone</option>
                                     </select>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select Range</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select Range</option>
                                         <option value="1">Select Range</option>
                                     </select>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select District</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select District</option>
                                         <option value="1">Select District</option>
                                     </select>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select Circle Officer</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select Circle Officer</option>
@@ -165,38 +186,53 @@ const PoliceStation = () => {
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Edit Police Station</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">Edit Users</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
-                                <div className="mb-3 col-12">
-                                    <label className='mb-2'>Police Station Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Police Station Name'/>
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Users Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Users Name'/>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Mobile No</label>
+                                    <input type="tel" className="form-control" placeholder='Enter Mobile No'/>
+                                </div>
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Office Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Office Name'/>
+                                </div>
+                                <div className="mb-3 col-md-6 col-12">
+                                    <label className='mb-2'>Select Police Station</label>
+                                    <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
+                                        <option selected>Select Police Station</option>
+                                        <option value="1">Select Police Station</option>
+                                    </select>
+                                </div>
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select Zone</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select Zone</option>
                                         <option value="1">Select Zone</option>
                                     </select>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select Range</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select Range</option>
                                         <option value="1">Select Range</option>
                                     </select>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select District</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select District</option>
                                         <option value="1">Select District</option>
                                     </select>
                                 </div>
-                                <div className="mb-3 col-12">
+                                <div className="mb-3 col-md-6 col-12">
                                     <label className='mb-2'>Select Circle Officer</label>
                                     <select className="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example">
                                         <option selected>Select Circle Officer</option>
@@ -222,4 +258,4 @@ const PoliceStation = () => {
   )
 }
 
-export default PoliceStation
+export default Users

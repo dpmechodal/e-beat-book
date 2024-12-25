@@ -18,7 +18,7 @@ const Sidebar = () => {
                     <div className="sidebar-link">
                         <ul>
                             <li className={location.pathname === '/RangeAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/RangeAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
-                            <li className={location.pathname === '/RangeAdmin/VehicleTypes' ? 'active' : ''}><NavLink to={"/RangeAdmin/VehicleTypes"}><i className="fa-solid fa-user"></i>Assign Report</NavLink></li>
+                            <li className={location.pathname === '/RangeAdmin/Report' ? 'active' : ''}><NavLink to={"/RangeAdmin/Report"}><i className="fa-solid fa-user"></i>Report</NavLink></li>
                         </ul>
                     </div>
                 </div>

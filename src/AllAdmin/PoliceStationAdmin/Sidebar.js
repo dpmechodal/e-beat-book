@@ -18,7 +18,13 @@ const Sidebar = () => {
                     <div className="sidebar-link">
                         <ul>
                             <li className={location.pathname === '/PoliceStationAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
-                            <li className={location.pathname === '/PoliceStationAdmin/VehicleTypes' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/VehicleTypes"}><i className="fa-solid fa-user"></i>Assign Report</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/Beats' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Beats"}><i className="fa-solid fa-user"></i>Beats</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/Police' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Police"}><i className="fa-solid fa-user"></i>Police</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/NistaranVivran' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/NistaranVivran"}><i className="fa-solid fa-user"></i>निस्तारण का विवरण</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/PiditaoInfo' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PiditaoInfo"}><i className="fa-solid fa-user"></i>पीड़िताओं का Info</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/PracharPrasar' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PracharPrasar"}><i className="fa-solid fa-user"></i>प्रचार-प्रसार हेतु भ्रमण की संख्या</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/JanJagrukta' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/JanJagrukta"}><i className="fa-solid fa-user"></i>जन-जागरुकता कार्यक्रमों की संख्या व स्थान</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/Report' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Report"}><i className="fa-solid fa-user"></i>Report</NavLink></li>
                         </ul>
                     </div>
                 </div>

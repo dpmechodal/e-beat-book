@@ -65,7 +65,7 @@ const CircleOfficer = () => {
                                             <td>CircleOfficer Name</td>
                                             <td>Zone Name</td>
                                             <td>Range Name</td>
-                                            <th>District Name</th>
+                                            <td>District Name</td>
                                             <td>
                                                 <div className='icon-up-del'>
                                                     <Link type="button" data-bs-toggle="modal" data-bs-target="#exampleModaledit"><i className="fa-solid fa-pen"></i></Link>

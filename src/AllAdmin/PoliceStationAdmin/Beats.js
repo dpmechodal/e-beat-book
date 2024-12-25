@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 import user from '../../Image/user.png';
 
-const Zone = () => {
+const Beats = () => {
   return (
     <div>
         {<Sidebar/>}
@@ -14,7 +14,7 @@ const Zone = () => {
                     <div className="col-12 mb-24">
                         <div className="bg-box">
                             <div className="pro-add-new px-0">
-                                <p>Zone Master </p>
+                                <p>Beats</p>
                                 <div className="form-floating small-floating">
                                     <input type="text" className="form-control py-2 w-auto" id="floatingInput" placeholder="name@example.com"/>
                                     <label for="floatingInput">Search</label>
@@ -22,15 +22,9 @@ const Zone = () => {
                             </div>
                             <div className='d-flex align-items-end justify-content-between mb-3'>
                                 <div className="col-lg-2 col-md-3 col-5">
-                                    {/* <label className='mb-2'>Select Zone</label> */}
-                                    <select className="form-select form-control" id="" aria-label="Floating label select example">
-                                        <option selected>Select Zone </option>
-                                        <option value="1">Select Zone </option>
-                                        <option value="2">Select Zone </option>
-                                    </select>
                                 </div>
                                 <div className="pro-add-new px-0 mb-0">
-                                    <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Create Zone</Link>
+                                    <Link className='btn add-new' to={'/PoliceStationAdmin/CreateBeats'}><i className="fa-solid fa-plus"></i> Create Beats</Link>
                                 </div>
                             </div>
                             <div className='responsive-table'>
@@ -38,14 +32,20 @@ const Zone = () => {
                                     <thead>
                                         <tr>
                                             <th>No</th>                                    
-                                            <th>Zone Name</th>
+                                            <th>Beats Name</th>
+                                            <th>Village Name</th>
+                                            <th>Place Name</th>
+                                            <th>Map Open</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Zone Name</td>
+                                            <td>Beats Name</td>
+                                            <td>Beats Name</td>
+                                            <td>Beats Name</td>
+                                            <td><Link className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalMap" type='button'>Map Open</Link></td>
                                             <td>
                                                 <div className='icon-up-del'>
                                                     <Link type="button" data-bs-toggle="modal" data-bs-target="#exampleModaledit"><i className="fa-solid fa-pen"></i></Link>
@@ -73,20 +73,50 @@ const Zone = () => {
                 </div>
             </div>
             
+            {/* <!-- Map Modal --> */}
+            <div className="modal fade" id="exampleModalMap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title" id="exampleModalLabel">Map Open</h5>
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body">
+                        <div className="user-details">
+                            <form className='row'>
+                                <div className="col-12">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.236318621005!2d72.12048137576751!3d21.763341762142858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5a09b3323dd9%3A0x3a1a8cbfd6c99bc3!2sMechodal%20Technology%20%7C%20Top%20Mechanical%20and%20Software%20Development%20company!5e1!3m2!1sen!2sin!4v1735106742740!5m2!1sen!2sin" width={'100%'} height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            {/* <!--End Map Modal --> */}
+            
             {/* <!-- Add Modal --> */}
             <div className="modal fade" id="exampleModalAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Create Zone</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">Add Beats</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
                                 <div className="mb-3 col-12">
-                                    <label className='mb-2'>Zone Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Zone Name'/>
+                                    <label className='mb-2'>Beats Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Beats Name'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Village Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Village Name'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Place Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Place Name'/>
                                 </div>
                                 <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                     <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
@@ -105,15 +135,23 @@ const Zone = () => {
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Edit Zone</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">Edit Beats</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
                         <div className="user-details">
                             <form className='row'>
                                 <div className="mb-3 col-12">
-                                    <label className='mb-2'>Zone Name</label>
-                                    <input type="text" className="form-control" placeholder='Enter Zone Name'/>
+                                    <label className='mb-2'>Beats Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Beats Name'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Village Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Village Name'/>
+                                </div>
+                                <div className="mb-3 col-12">
+                                    <label className='mb-2'>Place Name</label>
+                                    <input type="text" className="form-control" placeholder='Enter Place Name'/>
                                 </div>
                                 <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                     <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
@@ -134,4 +172,4 @@ const Zone = () => {
   )
 }
 
-export default Zone
+export default Beats

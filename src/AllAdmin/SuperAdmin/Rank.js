@@ -20,8 +20,8 @@ const Rank = () => {
                                     <label for="floatingInput">Search</label>
                                 </div>
                             </div>
-                            <div className='d-flex align-items-end justify-content-between'>
-                                <div className="mb-3 col-lg-2 col-md-3 col-5">
+                            <div className='d-flex align-items-end justify-content-between mb-3'>
+                                <div className="col-lg-2 col-md-3 col-5">
                                     {/* <label className='mb-2'>Select Rank</label> */}
                                     <select className="form-select form-control" id="" aria-label="Floating label select example">
                                         <option selected>Select Rank </option>

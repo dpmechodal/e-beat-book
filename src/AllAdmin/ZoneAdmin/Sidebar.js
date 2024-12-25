@@ -18,7 +18,11 @@ const Sidebar = () => {
                     <div className="sidebar-link">
                         <ul>
                             <li className={location.pathname === '/ZoneAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/ZoneAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
-                            <li className={location.pathname === '/ZoneAdmin/VehicleTypes' ? 'active' : ''}><NavLink to={"/ZoneAdmin/VehicleTypes"}><i className="fa-solid fa-user"></i>Assign Report</NavLink></li>
+                            <li className={location.pathname === '/ZoneAdmin/Report' ? 'active' : ''}><NavLink to={"/ZoneAdmin/Report"}><i className="fa-solid fa-user"></i>Report</NavLink></li>
+                                                        <li className={location.pathname === '/ZoneAdmin/NistaranVivran' ? 'active' : ''}><NavLink to={"/ZoneAdmin/NistaranVivran"}><i className="fa-solid fa-user"></i>निस्तारण का विवरण</NavLink></li>
+                                                        <li className={location.pathname === '/ZoneAdmin/PiditaoInfo' ? 'active' : ''}><NavLink to={"/ZoneAdmin/PiditaoInfo"}><i className="fa-solid fa-user"></i>पीड़िताओं का Info</NavLink></li>
+                                                        <li className={location.pathname === '/ZoneAdmin/PracharPrasar' ? 'active' : ''}><NavLink to={"/ZoneAdmin/PracharPrasar"}><i className="fa-solid fa-user"></i>प्रचार-प्रसार हेतु भ्रमण की संख्या</NavLink></li>
+                                                        <li className={location.pathname === '/ZoneAdmin/JanJagrukta' ? 'active' : ''}><NavLink to={"/ZoneAdmin/JanJagrukta"}><i className="fa-solid fa-user"></i>जन-जागरुकता कार्यक्रमों की संख्या व स्थान</NavLink></li>
                         </ul>
                     </div>
                 </div>

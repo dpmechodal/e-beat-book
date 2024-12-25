@@ -22,9 +22,10 @@ const Sidebar = () => {
                             <li className={location.pathname === '/SuperAdmin/District' ? 'active' : ''}><NavLink to={"/SuperAdmin/District"}><i className="fa-solid fa-house"></i>District</NavLink></li>
                             <li className={location.pathname === '/SuperAdmin/CircleOfficer' ? 'active' : ''}><NavLink to={"/SuperAdmin/CircleOfficer"}><i className="fa-solid fa-house"></i>Circle Officer</NavLink></li>
                             <li className={location.pathname === '/SuperAdmin/PoliceStation' ? 'active' : ''}><NavLink to={"/SuperAdmin/PoliceStation"}><i className="fa-solid fa-user"></i>Police Station</NavLink></li>
-                            <li className={location.pathname === '/SuperAdmin/Event' ? 'active' : ''}><NavLink to={"/SuperAdmin/Event"}><i className="fa-solid fa-user"></i>Event</NavLink></li>
+                            {/* <li className={location.pathname === '/SuperAdmin/Event' ? 'active' : ''}><NavLink to={"/SuperAdmin/Event"}><i className="fa-solid fa-user"></i>Event</NavLink></li> */}
                             <li className={location.pathname === '/SuperAdmin/Rank' ? 'active' : ''}><NavLink to={"/SuperAdmin/Rank"}><i className="fa-solid fa-user"></i>Rank</NavLink></li>
-                            <li className={location.pathname === '/SuperAdmin/Remarks' ? 'active' : ''}><NavLink to={"/SuperAdmin/Remarks"}><i className="fa-solid fa-user"></i>Remarks</NavLink></li>
+                            {/* <li className={location.pathname === '/SuperAdmin/Remarks' ? 'active' : ''}><NavLink to={"/SuperAdmin/Remarks"}><i className="fa-solid fa-user"></i>Remarks</NavLink></li> */}
+                            <li className={location.pathname === '/SuperAdmin/Users' ? 'active' : ''}><NavLink to={"/SuperAdmin/Users"}><i className="fa-solid fa-user"></i>Users</NavLink></li>
                         </ul>
                     </div>
                 </div>
