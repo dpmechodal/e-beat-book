@@ -369,6 +369,15 @@ input:-webkit-autofill:active{
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
+.all-select{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 15px;
+}
+.all-select select{
+  width: fit-content;
+}
 .pro-btn{
   text-align: center;
   display: flex;
@@ -630,6 +639,7 @@ span.add-pro-text{
   font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
+  width: max-content;
 }
 .btn.add-new{
   box-shadow: none;

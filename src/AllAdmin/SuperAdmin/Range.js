@@ -20,20 +20,20 @@ const Range = () => {
                                     <label for="floatingInput">Search</label>
                                 </div>
                             </div>
-                            <div className='d-flex align-items-end justify-content-between'>
-                                <div className="d-flex gap-2">
-                                    <select className="form-select form-control mb-3" aria-label="Floating label select example">
+                            <div className='d-flex align-items-end justify-content-between mb-3'>
+                                <div className="all-select">
+                                    <select className="form-select form-control" aria-label="Floating label select example">
                                         <option selected>Select Range </option>
                                         <option value="1">Select Range </option>
                                         <option value="2">Select Range </option>
                                     </select>
-                                    <select className="form-select form-control mb-3" aria-label="Floating label select example">
+                                    <select className="form-select form-control" aria-label="Floating label select example">
                                         <option selected>Select Zone </option>
                                         <option value="1">Select Zone </option>
                                         <option value="2">Select Zone </option>
                                     </select>
                                 </div>
-                                <div className="mb-3 pro-add-new px-0">
+                                <div className="pro-add-new px-0 mb-0">
                                     <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Create Range</Link>
                                 </div>
                             </div>

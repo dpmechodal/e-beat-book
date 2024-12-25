@@ -29,7 +29,7 @@ const Zone = () => {
                                         <option value="2">Select Zone </option>
                                     </select>
                                 </div>
-                                <div className="mb-3 pro-add-new px-0">
+                                <div className="pro-add-new px-0 mb-0">
                                     <Link type="button" className='btn add-new' data-bs-toggle="modal" data-bs-target="#exampleModalAdd"><i className="fa-solid fa-plus"></i> Create Zone</Link>
                                 </div>
                             </div>
