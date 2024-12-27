@@ -38,6 +38,11 @@ const PearupA = () => {
                                 <option value="1">Select Beat </option>
                                 <option value="1">Select Beat </option>
                             </select>
+                            <select className="form-select form-control" aria-label="Floating label select example">
+                                <option selected>Select Village </option>
+                                <option value="1">Select Village </option>
+                                <option value="1">Select Village </option>
+                            </select>
                         </div>
                         <div className="bg-box">
                             <div className="pro-add-new px-0">
@@ -57,12 +62,15 @@ const PearupA = () => {
                                             <th rowSpan={2}>थाना</th>
                                             <th rowSpan={2}>महिला बीट</th>
                                             <th rowSpan={2}>विवरण (क्षेत्र में संख्या विवरण )</th>
+                                            <th rowSpan={2}>गाँव</th>
                                             <th rowSpan={2}>स्थान,अन्य</th>
-                                            <th rowSpan={2}>सुरागरसी/चेंकिंग के दौरान अवैध गतिविधि की जानकारी होने पर महिला बीट कर्मी द्वारा कृत कार्यवाही का विवरण </th>
-                                            <th rowSpan={2}>बीट सूचना का अंकन /अन्य कार्यवाही ।</th>
+                                            <th rowSpan={2}>सुरागरसी/चेंकिंग के दौरान अवैध गतिविधि की जानकारी</th>
+                                            <th colSpan={2}>महिला बीट कर्मी द्वारा कृत कार्यवाही का विवरण </th>
                                             <th colSpan={3}>बीट सूचना /अन्य कार्यवाही की सूचना पर थाने द्वारा की गयी कार्यवाही का विवरण</th>
                                         </tr>
                                         <tr>
+                                            <th>बीट सूचना का अंकन</th>
+                                            <th>अन्य कार्यवाही ।</th>
                                             <th>अभियोग पंजीकरण मय विवरण</th>
                                             <th>निरोधात्मक कार्यवाही मय विवरण</th>
                                             <th>अन्य कार्यवाही मय विवरण</th>
@@ -72,6 +80,8 @@ const PearupA = () => {
                                         <tr>
                                             <td>1</td>                                    
                                             <td>शराब एवं अन्य मादक पादर्थो की बिक्री के सम्बन्ध में जानकारी</td>
+                                            <td></td>
+                                            <td></td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -96,10 +106,14 @@ const PearupA = () => {
                                             <td></td>
                                             <td></td>
                                             <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>                                    
                                             <td>महिला अपराध एवं उससे सम्बन्धित अभियुक्तगण के सम्बन्ध में जानकारी  </td>
+                                            <td></td>
+                                            <td></td>
                                             <td></td>
                                             <td></td>
                                             <td></td>

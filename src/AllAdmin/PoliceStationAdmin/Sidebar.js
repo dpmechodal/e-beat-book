@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import logo from '../../logo.png';
-import user from '../../Image/user.png';
 
 const Sidebar = () => {
     const location = useLocation();
@@ -26,7 +25,7 @@ const Sidebar = () => {
                             <div class="page-line"><hr/><span>Admin Panel</span></div>
                             <li className={location.pathname === '/PoliceStationAdmin/PrarupA' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PrarupA"}><i className="fa-solid fa-user"></i>प्रारुप-A</NavLink></li>
                             <li className={location.pathname === '/PoliceStationAdmin/PrarupB' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PrarupB"}><i className="fa-solid fa-user"></i>प्रारुप-B</NavLink></li>
-                            <li className={location.pathname === '/PoliceStationAdmin/NistaranVivran' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/NistaranVivran"}><i className="fa-solid fa-user"></i>निस्तारण का विवरण</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/NistaranVivran' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/NistaranVivran"}><i class="fa-solid fa-minus"></i><i className="fa-solid fa-user"></i>निस्तारण का विवरण</NavLink></li>
                             <li className={location.pathname === '/PoliceStationAdmin/PrarupC' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PrarupC"}><i className="fa-solid fa-user"></i>प्रारुप-C</NavLink></li>
                             {/* <li className={location.pathname === '/PoliceStationAdmin/PracharPrasar' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/PracharPrasar"}><i className="fa-solid fa-user"></i>प्रचार-प्रसार हेतु भ्रमण की संख्या</NavLink></li>
                             <li className={location.pathname === '/PoliceStationAdmin/JanJagrukta' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/JanJagrukta"}><i className="fa-solid fa-user"></i>जन-जागरुकता कार्यक्रमों की संख्या व स्थान</NavLink></li> */}
@@ -36,17 +35,15 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className='fixx'>
-                <nav className="top-header navbar navbar-expand-lg sticky-top navbar-light">
+                <nav className="top-header navbar navbar-expand sticky-top navbar-light">
                     <div className="py-2 container-fluid">
+                        <div className="navbar-user"><img src={logo} className='invisible'/></div>
                         <div className="has-search"><p>Police Station Admin</p></div>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse navheight justify-content-end" id="navbarSupportedContent">
+                        <div className="navheight justify-content-end" >
                             <ul className="navbar-nav navbarbottom mb-lg-0 align-items-lg-center">
                                 <li className="nav-item">
                                     <button type="button" className="navbar-user position-relative border-0 bg-transparent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src={user} />
+                                        <img src={logo} />
                                         <span className="position-absolute bottom-0 start-100 translate-middle p-1 bg-light-green border border-light rounded-circle">
                                             <span className="visually-hidden">New alerts</span>
                                         </span>

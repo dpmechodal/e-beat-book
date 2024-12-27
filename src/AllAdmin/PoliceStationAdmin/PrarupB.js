@@ -87,32 +87,40 @@ const PearupB = () => {
             <div className="modal fade" id="exampleModalAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">डेटा डाले</h5>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div className="modal-body">
-                        <div className="user-details">
-                            <form className='row'>
-                                <div className="mb-3 col-12">
-                                    <label className='mb-2'>पीड़िताओं का नाम</label>
-                                    <input type="text" className="form-control" placeholder='पीड़िताओं का नाम'/>
-                                </div>
-                                <div className="mb-3 col-12">
-                                    <label className='mb-2'>पीड़िताओं का पता</label>
-                                    <input type="text" className="form-control" placeholder='पीड़िताओं का पता'/>
-                                </div>
-                                <div className="mb-3 col-12">
-                                    <label className='mb-2'>पीड़िताओं का मोबाइल नम्बर</label>
-                                    <input type="text" className="form-control" placeholder='पीड़िताओं का मोबाइल नम्बर'/>
-                                </div>
-                                <div className="upload-reset-btn mb-0 justify-content-center pt-2">
-                                    <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
-                                    <button className='btn btn-upload me-0' data-bs-dismiss="modal">Save</button>
-                                </div>
-                            </form>
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">डेटा डाले</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </div>
+                        <div className="modal-body">
+                            <div className="user-details">
+                                <form className='row'>
+                                    <div className="mb-3 col-12">
+                                        <label className='mb-2'>पीड़िताओं का नाम</label>
+                                        <input type="text" className="form-control" placeholder='पीड़िताओं का नाम'/>
+                                    </div>
+                                    <div className="mb-3 col-12">
+                                        <label className='mb-2'>पीड़िताओं का पता</label>
+                                        <input type="text" className="form-control" placeholder='पीड़िताओं का पता'/>
+                                    </div>
+                                    <div className="mb-3 col-12">
+                                        <label className='mb-2'>पीड़िताओं का मोबाइल नम्बर</label>
+                                        <input type="text" className="form-control" placeholder='पीड़िताओं का मोबाइल नम्बर'/>
+                                    </div>
+                                    <div className="mb-3 col-12">
+                                        <label className='mb-2'>पीड़िता से प्राप्त शिकायत</label>
+                                        <input type="text" className="form-control" placeholder='पीड़िता से प्राप्त शिकायत'/>
+                                    </div>
+                                    <div className="mb-3 col-12">
+                                        <label className='mb-2'>Document Upload</label>
+                                        <input type="file" className="form-control"/>
+                                    </div>
+                                    <div className="upload-reset-btn mb-0 justify-content-center pt-2">
+                                        <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
+                                        <button className='btn btn-upload me-0' data-bs-dismiss="modal">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

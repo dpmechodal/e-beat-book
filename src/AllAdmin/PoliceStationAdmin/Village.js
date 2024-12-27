@@ -113,6 +113,10 @@ const Village = () => {
                                         <label className='mb-2'>Village Name</label>
                                         <input type="text" className="form-control" placeholder='Enter Village Name'/>
                                     </div>
+                                    <div className="mb-3 col-12">
+                                        <label className='mb-2'>Map</label>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.236318621005!2d72.12048137576751!3d21.763341762142858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5a09b3323dd9%3A0x3a1a8cbfd6c99bc3!2sMechodal%20Technology%20%7C%20Top%20Mechanical%20and%20Software%20Development%20company!5e1!3m2!1sen!2sin!4v1735106742740!5m2!1sen!2sin" width={'100%'} height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
                                     <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                         <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
                                         <button className='btn btn-upload me-0' data-bs-dismiss="modal">Save</button>

@@ -13,30 +13,40 @@ const Report = () => {
                 <div className="row">
                     <div className="col-12 mb-24">
                         <div className="all-select mb-3">
-                            {/* <select className="form-select form-control" aria-label="Floating label select example">
-                                <option selected>Select Range </option>
-                                <option value="1">Select Range </option>
-                                <option value="2">Select Range </option>
+                            <select className="form-select form-control" aria-label="Floating label select example">
+                                <option selected>Beat wise </option>
+                                <option value="1">Beat wise  </option>
+                                <option value="2">Beat wise  </option>
                             </select>
                             <select className="form-select form-control" aria-label="Floating label select example">
-                                <option selected>Select District </option>
-                                <option value="1">Select District </option>
-                                <option value="1">Select District </option>
+                                <option selected>कार्यवाही के बिन्दू </option>
+                                <option value="1">कार्यवाही के बिन्दू </option>
+                                <option value="1">कार्यवाही के बिन्दू </option>
                             </select>
                             <select className="form-select form-control" aria-label="Floating label select example">
-                                <option selected>Select Circle Officer </option>
-                                <option value="1">Select Circle Officer </option>
-                                <option value="2">Select Circle Officer </option>
+                                <option selected>Village wise  </option>
+                                <option value="1">Village wise  </option>
+                                <option value="2">Village wise  </option>
                             </select>
                             <select className="form-select form-control" aria-label="Floating label select example">
-                                <option selected>Select Police Station</option>
-                                <option value="1">Select Police Station</option>
-                                <option value="2">Select Police Station</option>
-                            </select> */}
+                                <option selected>Place wise</option>
+                                <option value="1">Place wise</option>
+                                <option value="2">Place wise</option>
+                            </select>
                             <select className="form-select form-control" aria-label="Floating label select example">
-                                <option selected>Select Beat </option>
-                                <option value="1">Select Beat </option>
-                                <option value="1">Select Beat </option>
+                                <option selected>प्रचार-प्रसार के मुख्य विषय wise </option>
+                                <option value="1">प्रचार-प्रसार के मुख्य विषय wise </option>
+                                <option value="1">प्रचार-प्रसार के मुख्य विषय wise </option>
+                            </select>
+                            <select className="form-select form-control" aria-label="Floating label select example">
+                                <option selected>User wise  </option>
+                                <option value="1">User wise  </option>
+                                <option value="1">User wise  </option>
+                            </select>
+                            <select className="form-select form-control" aria-label="Floating label select example">
+                                <option selected>Total complain  </option>
+                                <option value="1">Total complain  </option>
+                                <option value="1">Total complain  </option>
                             </select>
                         </div>
                         <div className="bg-box">

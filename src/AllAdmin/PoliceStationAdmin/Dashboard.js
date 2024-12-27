@@ -16,7 +16,7 @@ const Dashboard = () => {
                       <div className="welcome-section">
                         <div className="welcome-text">
                           <h5>1,235</h5>
-                          <p>Beats Wise</p>
+                          <p>Beat wise</p>
                         </div>
                       </div>
                     </div>
@@ -26,7 +26,7 @@ const Dashboard = () => {
                       <div className="welcome-section">
                         <div className="welcome-text">
                           <h5>1,235</h5>
-                          <p>Complains</p>
+                          <p>कार्यवाही के बिन्दू</p>
                         </div>
                       </div>
                     </div>
@@ -36,7 +36,7 @@ const Dashboard = () => {
                       <div className="welcome-section">
                         <div className="welcome-text">
                           <h5>1,235</h5>
-                          <p>प्रारूप A</p>
+                          <p>Village wise</p>
                         </div>
                       </div>
                     </div>
@@ -46,7 +46,7 @@ const Dashboard = () => {
                       <div className="welcome-section">
                         <div className="welcome-text">
                           <h5>1,235</h5>
-                          <p>प्रारूप B</p>
+                          <p>Place wise</p>
                         </div>
                       </div>
                     </div>
@@ -56,7 +56,57 @@ const Dashboard = () => {
                       <div className="welcome-section">
                         <div className="welcome-text">
                           <h5>1,235</h5>
-                          <p>प्रारूप C</p>
+                          <p>प्रारुप - A</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-24">
+                    <div className="bg-box">
+                      <div className="welcome-section">
+                        <div className="welcome-text">
+                          <h5>1,235</h5>
+                          <p>प्रारूप - B</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-24">
+                    <div className="bg-box">
+                      <div className="welcome-section">
+                        <div className="welcome-text">
+                          <h5>1,235</h5>
+                          <p>प्रारूप - C</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-24">
+                    <div className="bg-box">
+                      <div className="welcome-section">
+                        <div className="welcome-text">
+                          <h5>1,235</h5>
+                          <p>प्रचार-प्रसार के मुख्य विषय wise</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-24">
+                    <div className="bg-box">
+                      <div className="welcome-section">
+                        <div className="welcome-text">
+                          <h5>1,235</h5>
+                          <p>User wise</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-24">
+                    <div className="bg-box">
+                      <div className="welcome-section">
+                        <div className="welcome-text">
+                          <h5>1,235</h5>
+                          <p>Total Complain</p>
                         </div>
                       </div>
                     </div>
