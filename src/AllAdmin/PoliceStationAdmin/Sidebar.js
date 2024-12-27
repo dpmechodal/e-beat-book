@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <div className="overflow-y">
                     <div className="sidebar-link">
                         <ul>
-                            <li className={location.pathname === '/PoliceStationAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
+                            <li className={location.pathname === '/PoliceStationAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Dashboard"}><i className="fa-solid fa-user"></i>Dashboard</NavLink></li>
                             <div class="page-line"><hr/><span>User Panel</span></div>
                             <li className={location.pathname === '/PoliceStationAdmin/Beats' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Beats"}><i className="fa-solid fa-user"></i>Beats</NavLink></li>
                             <li className={location.pathname === '/PoliceStationAdmin/Village' ? 'active' : ''}><NavLink to={"/PoliceStationAdmin/Village"}><i className="fa-solid fa-user"></i>Village</NavLink></li>

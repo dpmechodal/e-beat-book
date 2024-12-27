@@ -17,24 +17,22 @@ const Sidebar = () => {
                 <div className="overflow-y">
                     <div className="sidebar-link">
                         <ul>
-                            <li className={location.pathname === '/COAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/COAdmin/Dashboard"}><i className="fa-solid fa-house"></i>Dashboard</NavLink></li>
+                            <li className={location.pathname === '/COAdmin/Dashboard' ? 'active' : ''}><NavLink to={"/COAdmin/Dashboard"}><i className="fa-solid fa-user"></i>Dashboard</NavLink></li>
                             <li className={location.pathname === '/COAdmin/Report' ? 'active' : ''}><NavLink to={"/COAdmin/Report"}><i className="fa-solid fa-user"></i>Report</NavLink></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className='fixx'>
-                <nav className="top-header navbar navbar-expand-lg sticky-top navbar-light">
+                <nav className="top-header navbar navbar-expand sticky-top navbar-light">
                     <div className="py-2 container-fluid">
+                        <div className="navbar-user"><img src={logo} className='invisible'/></div>
                         <div className="has-search"><p>CR Admin</p></div>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse navheight justify-content-end" id="navbarSupportedContent">
+                        <div className="navheight justify-content-end" >
                             <ul className="navbar-nav navbarbottom mb-lg-0 align-items-lg-center">
                                 <li className="nav-item">
                                     <button type="button" className="navbar-user position-relative border-0 bg-transparent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src={user} />
+                                        <img src={logo} />
                                         <span className="position-absolute bottom-0 start-100 translate-middle p-1 bg-light-green border border-light rounded-circle">
                                             <span className="visually-hidden">New alerts</span>
                                         </span>
