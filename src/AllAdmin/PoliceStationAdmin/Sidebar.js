@@ -3,13 +3,13 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import logo from '../../logo.png';
 
-const Sidebar = () => {
-    const location = useLocation();
+const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
+  const location = useLocation();
 
-    return (
-        <div>
-            {/* nav fixx */}
-            <div className='sidebar'>
+  return (
+    <div>
+      {/* Sidebar */}
+      <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
                 <div className="sidebar-logo">
                     <Link to={"/PoliceStationAdmin/Dashboard"}><img src={logo} className='img-fluid'/></Link>
                 </div>
@@ -34,10 +34,19 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-            <div className='fixx'>
-                <nav className="top-header navbar navbar-expand sticky-top navbar-light">
+      <div className={`fixx ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+        <nav
+          className={`top-header navbar navbar-expand sticky-top navbar-light ${
+            isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'
+          }`}
+        >
                     <div className="py-2 container-fluid">
-                        <div className="navbar-user"><img src={logo} className='invisible'/></div>
+            <button
+              className="navbar-user position-relative border-0 bg-transparent"
+              onClick={toggleSidebar}
+            >
+              <i className="fa-solid fa-bars"></i>
+            </button>
                         <div className="has-search"><p>Police Station Admin</p></div>
                         <div className="navheight justify-content-end" >
                             <ul className="navbar-nav navbarbottom mb-lg-0 align-items-lg-center">

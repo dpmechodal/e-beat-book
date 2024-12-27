@@ -269,7 +269,7 @@ input:-webkit-autofill:active{
   display: flex;
   justify-content: center;
 }
-.sidebar{
+/* .sidebar{
   width: 260px;
   background: #212529;
   box-shadow: 0px 1px 4px 2px rgba(50, 71, 92, 0.02), 0px 2px 6px 1px rgba(50, 71, 92, 0.04), 0px 1px 6px -2px rgba(50, 71, 92, 0.06);
@@ -280,7 +280,63 @@ input:-webkit-autofill:active{
   bottom: 0;
   margin: 12px 12px 12px 0;
   border-radius: 0 8px 8px 0;
+  transition: transform 0.3s ease;
 }
+.sidebar.closed{
+  width: 0;
+  margin: 0;
+}
+.sidebar-closed .top-header {
+  margin: 12px 12px 24px 12px;
+}
+.asside{
+  transition: margin 0.3s ease;
+}
+.asside.sidebar-open {
+  margin: 90px 12px 24px 284px;
+}
+.asside.sidebar-closed {
+  margin: 90px 12px 24px 12px;
+} */
+/* Sidebar */
+.sidebar {
+  width: 260px; /* Initial width of the sidebar */
+  background: #212529;
+  box-shadow: 0px 1px 4px 2px rgba(50, 71, 92, 0.02), 0px 2px 6px 1px rgba(50, 71, 92, 0.04), 0px 1px 6px -2px rgba(50, 71, 92, 0.06);
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 12px 12px 12px 0;
+  border-radius: 0 8px 8px 0;
+  transition: width 0.5s ease, margin 0.5s ease;
+}
+
+.sidebar.closed {
+  width: 0;
+  margin: 12px 12px 12px 0;
+  /* transition: width 0s ease, margin 0s ease; */
+}
+.sidebar-closed .top-header {
+  margin: 12px 12px 24px 12px;
+}
+
+.asside {
+  transition: margin 0.5s ease;
+}
+
+.asside.sidebar-open {
+  margin: 90px 12px 24px 284px;
+}
+
+.asside.sidebar-closed {
+  margin: 90px 12px 24px 12px;
+}
+.sidebar.open .asside {
+  transition: margin 0.5s ease;
+}
+
 .sidebar-link{
   margin-left: 16px;
   margin-right: 16px;
@@ -414,6 +470,7 @@ input:-webkit-autofill:active{
   box-shadow: 0px 1px 4px 2px rgba(50, 71, 92, 0.02), 0px 3px 7px 1px rgba(50, 71, 92, 0.04), 0px 1px 7px -2px rgba(50, 71, 92, 0.06);
   margin: 12px 12px 24px 284px;
   padding: 0;
+  transition: margin 0.3s ease;
 }
 .has-search .form-control {
   padding-left: 2.375rem;
@@ -449,9 +506,6 @@ input:-webkit-autofill:active{
 span.bg-light-green{
   background-color: #71DD37;
   border: 1px solid #FFF;
-}
-.asside{
-  margin: 90px 12px 24px 284px;
 }
 .btn-group-vertical>.btn, .btn-group>.btn {
   border-color: #212529;
@@ -1319,7 +1373,10 @@ tbody.body-half-screen{
   margin-bottom: 0;  
   text-transform: uppercase;
 }
-
+.navbar-user i{
+  color: #FFF;
+  font-size: 23px;
+}
 
 /* OTP  */
 

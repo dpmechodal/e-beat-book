@@ -1,13 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
 const Dashboard = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div>
-        {<Sidebar/>}
-        <div className="asside">
+      <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <div className={`asside ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
           <div className='about-first'>
               <div className=''>
                 <div className="row">

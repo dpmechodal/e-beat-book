@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
-import user from '../../Image/user.png';
 
 const Village = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div>
-        {<Sidebar/>}
-        <div className="asside">
+      <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <div className={`asside ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
             <div className='about-first'>
                 <div className="row">
                     <div className="col-12 mb-24">
@@ -115,7 +120,7 @@ const Village = () => {
                                     </div>
                                     <div className="mb-3 col-12">
                                         <label className='mb-2'>Map</label>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.236318621005!2d72.12048137576751!3d21.763341762142858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5a09b3323dd9%3A0x3a1a8cbfd6c99bc3!2sMechodal%20Technology%20%7C%20Top%20Mechanical%20and%20Software%20Development%20company!5e1!3m2!1sen!2sin!4v1735106742740!5m2!1sen!2sin" width={'100%'} height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d259403.92617659474!2d76.92842228008838!3d28.64428521020158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e1!3m2!1sen!2sin!4v1735308883796!5m2!1sen!2sin" width={'100%'} height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                     <div className="upload-reset-btn mb-0 justify-content-center pt-2">
                                         <button className='btn btn-reset' data-bs-dismiss="modal">Cancel</button>
